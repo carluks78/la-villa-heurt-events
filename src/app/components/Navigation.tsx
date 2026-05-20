@@ -80,7 +80,7 @@ export function Navigation() {
               lineHeight: 1.1,
             }}
           >
-            HEURT EVENTS
+            HEURTES VENTS
           </span>
         </a>
 
