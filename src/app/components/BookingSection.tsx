@@ -272,7 +272,52 @@ export function BookingSection() {
           </motion.div>
         </div>
 
-        
+        {/* Pricing */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.4, duration: 0.8 }}
+          style={{ marginBottom: "72px" }}
+        >
+          <h3
+            style={{
+              fontFamily: "'Playfair Display', serif",
+              fontSize: "28px",
+              fontWeight: 600,
+              color: "#fff",
+              textAlign: "center",
+              marginBottom: "32px",
+            }}
+          >
+             Tarifs indicatifs
+          </h3>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "16px" }}>
+            {PRICING.map((p, i) => (
+              <div
+                key={i}
+                style={{
+                  background: "rgba(255,255,255,0.03)",
+                  border: "1px solid rgba(201,169,110,0.15)",
+                  borderRadius: "12px",
+                  padding: "24px",
+                  textAlign: "center",
+                }}
+              >
+                <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "12px", color: "rgba(255,255,255,0.5)", letterSpacing: "1px", textTransform: "uppercase", marginBottom: "8px" }}>
+                  {p.label}
+                </div>
+                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "32px", fontWeight: 700, color: "#C9A96E", marginBottom: "8px" }}>
+                  {p.price}
+                </div>
+                <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "12px", color: "rgba(255,255,255,0.4)" }}>
+                  {p.detail}
+                </div>
+              </div>
+            ))}
+          </div>
+          <p style={{ textAlign: "center", fontFamily: "'Montserrat', sans-serif", fontSize: "12px", color: "rgba(255,255,255,0.35)", marginTop: "16px" }}>
+            * Tarifs variables selon la saison. Consultez Airbnb pour les prix actuels.
+          </p>
         </motion.div>
 
         {/* Guarantees */}
