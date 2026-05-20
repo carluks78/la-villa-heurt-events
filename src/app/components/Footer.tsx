@@ -46,7 +46,7 @@ export function Footer() {
                 La Villa
               </div>
               <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "22px", fontWeight: 700, color: "#C9A96E", letterSpacing: "2px" }}>
-                HEURT EVENTS
+                HEURTES VENTS
               </div>
             </div>
             <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: "16px", fontStyle: "italic", color: "rgba(255,255,255,0.5)", lineHeight: 1.6, marginBottom: "20px" }}>
@@ -262,7 +262,7 @@ export function Footer() {
           }}
         >
           <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "12px", color: "rgba(255,255,255,0.3)", margin: 0 }}>
-            © 2025 La Villa Heurt Events — Pierre Jacques. Tous droits réservés.
+            © 2025 La Villa Heurtes Vents — Pierre Jacques. Tous droits réservés.
             <br />
             <span style={{ fontSize: "11px", opacity: 0.7 }}>
               Location saisonnière de luxe · Hardencourt-Cocherel · Eure · Normandie · France
