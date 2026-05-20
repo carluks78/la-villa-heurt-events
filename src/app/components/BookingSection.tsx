@@ -272,23 +272,8 @@ export function BookingSection() {
           </motion.div>
         </div>
 
-        {/* Pricing */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.4, duration: 0.8 }}
-          style={{ marginBottom: "72px" }}
-        >
-          <h3
-            style={{
-              fontFamily: "'Playfair Display', serif",
-              fontSize: "28px",
-              fontWeight: 600,
-              color: "#fff",
-              textAlign: "center",
-              marginBottom: "32px",
-            }}
-          >
+        
+        </motion.div>
 
         {/* Guarantees */}
         <motion.div
