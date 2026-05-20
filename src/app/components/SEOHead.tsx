@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 const SITE_URL = "https://www.villaheurtevents.fr";
 const SITE_NAME = "La Villa Heurt Events";
-const DEFAULT_TITLE = "La Villa Heurt Events | Location Villa Luxe Normandie avec Piscine Chauffée - Proche Giverny";
+const DEFAULT_TITLE = "La Villa Heurtes Vents | Location Villa Luxe Normandie avec Piscine Chauffée - Proche Giverny";
 const DEFAULT_DESC =
   "Séjournez dans une longère en pierre de 150m², 4 chambres, piscine chauffée, balnéothérapie, jardin privé 1700m². À 1h de Paris, proche Giverny. Réservez votre séjour de rêve en Haute-Normandie.";
 const OG_IMAGE = `${SITE_URL}/logo.svg`;
