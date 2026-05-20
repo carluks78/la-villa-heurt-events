@@ -143,7 +143,7 @@ export function Hero() {
             margin: "0 0 28px",
           }}
         >
-          Heurt Events
+          Heurtes Vents
         </motion.h1>
 
         {/* Separator */}
