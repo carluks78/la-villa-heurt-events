@@ -8,12 +8,6 @@ const REVIEWS = [
   { name: "Marie-Laure B.", flag: "🇫🇷", rating: 5, text: "Week-end romantique parfait. La villa est encore plus belle qu'en photos. Très bien équipée, magnifique jardin, excellent accueil de Pierre. On reviendra sans hésiter !", date: "Juin 2024" },
 ];
 
-const PRICING = [
-  { label: "Semaine basse saison", price: "À partir de 900€", detail: "7 nuits / jusqu'à 8 personnes" },
-  { label: "Week-end", price: "À partir de 320€", detail: "2 nuits / jusqu'à 8 personnes" },
-  { label: "Semaine haute saison", price: "À partir de 1 200€", detail: "7 nuits / piscine chauffée incluse" },
-];
-
 export function BookingSection() {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
@@ -271,107 +265,6 @@ export function BookingSection() {
             </a>
           </motion.div>
         </div>
-
-        {/* Pricing */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.4, duration: 0.8 }}
-          style={{ marginBottom: "72px" }}
-        >
-          <h3
-            style={{
-              fontFamily: "'Playfair Display', serif",
-              fontSize: "28px",
-              fontWeight: 600,
-              color: "#fff",
-              textAlign: "center",
-              marginBottom: "32px",
-            }}
-          >
-             Tarifs indicatifs
-          </h3>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "16px" }}>
-            {PRICING.map((p, i) => (
-              <div
-                key={i}
-                style={{
-                  background: "rgba(255,255,255,0.03)",
-                  border: "1px solid rgba(201,169,110,0.15)",
-                  borderRadius: "12px",
-                  padding: "24px",
-                  textAlign: "center",
-                }}
-              >
-                <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "12px", color: "rgba(255,255,255,0.5)", letterSpacing: "1px", textTransform: "uppercase", marginBottom: "8px" }}>
-                  {p.label}
-                </div>
-                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "32px", fontWeight: 700, color: "#C9A96E", marginBottom: "8px" }}>
-                  {p.price}
-                </div>
-                <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "12px", color: "rgba(255,255,255,0.4)" }}>
-                  {p.detail}
-                </div>
-              </div>
-            ))}
-          </div>
-          <p style={{ textAlign: "center", fontFamily: "'Montserrat', sans-serif", fontSize: "12px", color: "rgba(255,255,255,0.35)", marginTop: "16px" }}>
-            * Tarifs variables selon la saison. Consultez Airbnb pour les prix actuels.
-          </p>
-        </motion.div>
-
-        {/* Guarantees */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.5, duration: 0.7 }}
-          style={{
-            display: "flex",
-            gap: "24px",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            marginBottom: "72px",
-          }}
-        >
-          {[
-            { icon: Shield, label: "Paiement sécurisé", sub: "Via Airbnb" },
-            { icon: Clock, label: "Réponse rapide", sub: "< 1 heure" },
-            { icon: Calendar, label: "Annulation flexible", sub: "Selon conditions" },
-            { icon: Users, label: "Jusqu'à 8 personnes", sub: "4 chambres" },
-          ].map((g) => (
-            <div
-              key={g.label}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                gap: "8px",
-                minWidth: "120px",
-              }}
-            >
-              <div
-                style={{
-                  width: "48px",
-                  height: "48px",
-                  borderRadius: "12px",
-                  background: "rgba(201,169,110,0.08)",
-                  border: "1px solid rgba(201,169,110,0.2)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <g.icon size={20} color="#C9A96E" />
-              </div>
-              <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "13px", fontWeight: 600, color: "#fff", textAlign: "center" }}>
-                {g.label}
-              </div>
-              <div style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "11px", color: "rgba(255,255,255,0.4)", textAlign: "center" }}>
-                {g.sub}
-              </div>
-            </div>
-          ))}
-        </motion.div>
 
         {/* Reviews */}
         <motion.div
