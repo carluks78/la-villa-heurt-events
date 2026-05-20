@@ -42,7 +42,7 @@ export function Hero() {
       >
         <img
           src={heroHome}
-          alt="La Villa Heurt Events - Vue extérieure, villa de luxe en Haute-Normandie"
+          alt="La Villa Heurtes Vents - Vue extérieure, villa de luxe en Haute-Normandie"
           style={{
             width: "100%",
             height: "120%",
