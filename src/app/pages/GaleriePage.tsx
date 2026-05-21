@@ -16,7 +16,6 @@ import chambre3 from "../../imports/chambre_3.png";
 import chambre4 from "../../imports/chambre_4.png";
 import balneo from "../../imports/balneo.png";
 import piscine from "../../imports/piscine.JPG";
-import piscine1 from "../../imports/piscine-1.JPG";
 import img4937 from "../../imports/IMG_4937.JPG";
 import img4939 from "../../imports/IMG_4939.JPG";
 import img4940 from "../../imports/IMG_4940.JPG";
@@ -28,8 +27,6 @@ import cuisine2 from "../../imports/cuisine2.JPG";
 const IMAGES_FR = [
   { src: heroHome, alt: "La Villa Heurtés Vents — Vue extérieure, longère normande en pierre", label: "Extérieur" },
   { src: piscine, alt: "Piscine chauffée de La Villa Heurtés Vents — eau tempérée", label: "Piscine" },
-
-  { src: piscine1, alt: "Piscine privée et jardin clos de la villa normande", label: "Piscine & Jardin" },
 
   { src: salon1, alt: "Salon chaleureux de la villa normande", label: "Salon" },
   { src: salon2, alt: "Espace séjour lumineux de la longère", label: "Séjour" },
@@ -55,7 +52,7 @@ const IMAGES_FR = [
 const IMAGES_EN = [
   { src: heroHome, alt: "La Villa Heurtés Vents — Exterior view, stone Norman longhouse", label: "Exterior" },
   { src: piscine, alt: "Heated pool at La Villa Heurtés Vents — temperature-controlled water", label: "Pool" },
-  { src: piscine1, alt: "Private pool and enclosed garden of the Norman villa", label: "Pool & Garden" },
+ 
   { src: salon1, alt: "Cosy living room of the Norman villa", label: "Living room" },
   { src: salon2, alt: "Bright lounge area of the longhouse", label: "Lounge" },
   { src: salon, alt: "Elegant interior of the Norman longhouse", label: "Interior" },
