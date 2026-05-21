@@ -1,16 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Add WhatsApp Button</title>
-      <style>html, body { height: 100%; margin: 0; } #root { height: 100%; }</style>
-    </head>
+<head>
+  <!-- Base -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+  <!-- SEO -->
+  <title>La Villa Heurt Events | Villa avec piscine en Normandie proche Giverny</title>
+
+  <meta
+    name="description"
+    content="Découvrez La Villa Heurt Events à Hardencourt-Cocherel en Haute-Normandie : villa de charme avec piscine chauffée, balnéothérapie, 4 chambres et jardin privé. Séjour détente à 1h de Paris, proche Giverny, Vernon et MacArthurGlen Douains."
+  />
+
+  <meta
+    name="keywords"
+    content="location villa Normandie, villa avec piscine Normandie, location vacances Normandie, maison vacances Normandie, villa luxe Normandie, location saisonnière Normandie, villa avec piscine chauffée, villa proche Giverny, maison vacances Eure, villa Haute Normandie, week-end détente Normandie, location maison proche Paris, location Airbnb Normandie piscine, tourisme Vernon, MacArthurGlen Giverny, villa premium avec piscine, luxury villa Normandy, vacation rental Normandy"
+  />
+
+  <meta name="author" content="La Villa Heurt Events" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="language" content="fr" />
+
+  <!-- GEO -->
+  <meta name="geo.region" content="FR-27" />
+  <meta name="geo.placename" content="Hardencourt-Cocherel" />
+  <meta name="geo.position" content="49.0400;1.3800" />
+  <meta name="ICBM" content="49.0400,1.3800" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://la-villa-heurt-events.vercel.app/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <link rel="apple-touch-icon" href="/logo.svg" />
+
+  <!-- Mobile -->
+  <meta name="theme-color" content="#3AB4B1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="La Villa Heurt Events" />
+
+  <meta
+    property="og:url"
+    content="https://la-villa-heurt-events.vercel.app/"
+  />
+
+  <meta
+    property="og:title"
+    content="La Villa Heurt Events | Villa avec piscine en Normandie"
+  />
+
+  <meta
+    property="og:description"
+    content="Villa de charme avec piscine chauffée, balnéothérapie et jardin privé à 1h de Paris, proche Giverny et Vernon."
+  />
+
+  <!-- IMPORTANT -->
+  <!-- WhatsApp/Facebook gèrent mal les SVG -->
+  <!-- Utiliser une vraie image JPG ou PNG -->
+  <!-- Créer : /public/og-image.jpg -->
+
+  <meta
+    property="og:image"
+    content="https://la-villa-heurt-events.vercel.app/og-image.jpg"
+  />
+
+  <meta
+    property="og:image:secure_url"
+    content="https://la-villa-heurt-events.vercel.app/og-image.jpg"
+  />
+
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <meta
+    property="og:image:alt"
+    content="La Villa Heurt Events - Villa avec piscine en Normandie"
+  />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta
+    name="twitter:title"
+    content="La Villa Heurt Events | Villa avec piscine en Normandie"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Villa de charme avec piscine chauffée proche Giverny."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://la-villa-heurt-events.vercel.app/og-image.jpg"
+  />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "La Villa Heurt Events",
+    "url": "https://la-villa-heurt-events.vercel.app/",
+    "image": "https://la-villa-heurt-events.vercel.app/og-image.jpg",
+    "description": "Villa de charme avec piscine chauffée, balnéothérapie, jardin privé et 4 chambres en Haute-Normandie proche Giverny.",
+    "priceRange": "€€€",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hardencourt-Cocherel",
+      "addressRegion": "Normandie",
+      "postalCode": "27120",
+      "addressCountry": "FR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "49.0400",
+      "longitude": "1.3800"
+    },
+    "amenityFeature": [
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Piscine chauffée",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Balnéothérapie",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "WiFi Fibre",
+        "value": true
+      },
+      {
+        "@type": "LocationFeatureSpecification",
+        "name": "Parking privé",
+        "value": true
+      }
+    ]
+  }
+  </script>
+
+  <!-- Styles -->
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #000;
+    }
+
+    #root {
+      height: 100%;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div id="root"></div>
+
+  <script type="module" src="/src/main.tsx"></script>
+
+</body>
+
+</html>
