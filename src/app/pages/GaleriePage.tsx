@@ -21,6 +21,7 @@ import img4937 from "../../imports/IMG_4937.JPG";
 import img4939 from "../../imports/IMG_4939.JPG";
 import img4940 from "../../imports/IMG_4940.JPG";
 import img4941 from "../../imports/IMG_4941.JPG";
+import cuisine from "../../import/scuisine.JPG";
 
 const IMAGES_FR = [
   { src: heroHome, alt: "La Villa Heurtés Vents — Vue extérieure, longère normande en pierre", label: "Extérieur" },
