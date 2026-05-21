@@ -21,9 +21,6 @@ import img4937 from "../../imports/IMG_4937.JPG";
 import img4939 from "../../imports/IMG_4939.JPG";
 import img4940 from "../../imports/IMG_4940.JPG";
 import img4941 from "../../imports/IMG_4941.JPG";
-import cuisine from "../../imports/cuisine.JPG";
-import cuisine from "../../imports/cuisine1.JPG";
-import cuisine from "../../imports/cuisine2.JPG";
 
 const IMAGES_FR = [
   { src: heroHome, alt: "La Villa Heurtés Vents — Vue extérieure, longère normande en pierre", label: "Extérieur" },
@@ -41,9 +38,6 @@ const IMAGES_FR = [
   { src: img4939, alt: "Espace extérieur de La Villa Heurtés Vents", label: "Extérieur" },
   { src: img4940, alt: "Terrasse et jardin clos 1700m²", label: "Terrasse" },
   { src: img4941, alt: "La Villa Heurtés Vents — Normandie, Eure", label: "La Villa" },
-  { src: cuisine, alt: "La cuisine", label: "cuisine" },
-  { src: cuisine, alt: "La cuisine", label: "cuisine1" },
-  { src: cuisine, alt: "La cuisine", label: "cuisine2" },
 ];
 
 const IMAGES_EN = [
@@ -62,9 +56,6 @@ const IMAGES_EN = [
   { src: img4939, alt: "Exterior space of La Villa Heurtés Vents", label: "Exterior" },
   { src: img4940, alt: "Terrace and 1700m² enclosed garden", label: "Terrace" },
   { src: img4941, alt: "La Villa Heurtés Vents — Normandy, Eure", label: "The Villa" },
-  { src: cuisine, alt: "kitchen", label: "kitchen" },
-  { src: cuisine1, alt: "kitchen", label: "kitchen" },
-  { src: cuisine2, alt: "kitchen", label: "kitchen" },
 ];
 
 export function GaleriePage() {
