@@ -17,10 +17,10 @@ import chambre4 from "../../imports/chambre_4.png";
 import balneo from "../../imports/balneo.png";
 import piscine from "../../imports/piscine.JPG";
 import piscine1 from "../../imports/piscine-1.JPG";
-import img4937 from "../../imports/IMG_4937.JPG";
-import img4939 from "../../imports/IMG_4939.JPG";
-import img4940 from "../../imports/IMG_4940.JPG";
-import img4941 from "../../imports/IMG_4941.JPG";
+import IMG4937 from "../../imports/IMG_4937.JPG";
+import IMG4939 from "../../imports/IMG_4939.JPG";
+import IMG4940 from "../../imports/IMG_4940.JPG";
+import IMG4941 from "../../imports/IMG_4941.JPG";
 import cuisine from "../../imports/cuisine.JPG";
 import cuisine1 from "../../imports/cuisine1.JPG";
 import cuisine2 from "../../imports/cuisine2.JPG";
@@ -28,7 +28,7 @@ import cuisine2 from "../../imports/cuisine2.JPG";
 const IMAGES_FR = [
   { src: heroHome, alt: "La Villa Heurtés Vents — Vue extérieure, longère normande en pierre", label: "Extérieur" },
   { src: piscine, alt: "Piscine chauffée de La Villa Heurtés Vents — eau tempérée", label: "Piscine" },
-  { src: piscine1, alt: "Piscine privée et jardin clos de la villa normande", label: "Piscine & Jardin" },
+  { src: piscine-1, alt: "Piscine privée et jardin clos de la villa normande", label: "Piscine & Jardin" },
   { src: salon1, alt: "Salon chaleureux de la villa normande", label: "Salon" },
   { src: salon2, alt: "Espace séjour lumineux de la longère", label: "Séjour" },
   { src: salon, alt: "Intérieur élégant de la longère normande", label: "Intérieur" },
@@ -37,10 +37,10 @@ const IMAGES_FR = [
   { src: chambre3, alt: "Chambre prestige normande", label: "Chambre 3" },
   { src: chambre4, alt: "Chambre avec vue sur la nature", label: "Chambre 4" },
   { src: balneo, alt: "Balnéothérapie et espace détente", label: "Balnéothérapie" },
-  { src: img4937, alt: "Vue de la villa normande et son jardin privatif", label: "Villa & Jardin" },
-  { src: img4939, alt: "Espace extérieur de La Villa Heurtés Vents", label: "Extérieur" },
-  { src: img4940, alt: "Terrasse et jardin clos 1700m²", label: "Terrasse" },
-  { src: img4941, alt: "La Villa Heurtés Vents — Normandie, Eure", label: "La Villa" },
+  { src: IMG-4937, alt: "Vue de la villa normande et son jardin privatif", label: "Villa & Jardin" },
+  { src: IMG-4939, alt: "Espace extérieur de La Villa Heurtés Vents", label: "Extérieur" },
+  { src: IMG-4940, alt: "Terrasse et jardin clos 1700m²", label: "Terrasse" },
+  { src: IMG-4941, alt: "La Villa Heurtés Vents — Normandie, Eure", label: "La Villa" },
   { src: cuisine, alt: "Cuisine équipée haut de gamme de La Villa Heurtés Vents", label: "Cuisine" },
 { src: cuisine1, alt: "Cuisine américaine avec bar et équipements premium", label: "Cuisine équipée" },
 { src: cuisine2, alt: "Espace cuisine lumineux de la villa normande", label: "Cuisine & Séjour" },
