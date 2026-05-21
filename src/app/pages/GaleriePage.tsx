@@ -42,10 +42,10 @@ const IMAGES_FR = [
 
   { src: balneo, alt: "Balnéothérapie et espace détente", label: "Balnéothérapie" },
 
-  { src: IMG4937, alt: "Vue de la villa normande et son jardin privatif", label: "Villa & Jardin" },
-  { src: IMG4939, alt: "Espace extérieur de La Villa Heurtés Vents", label: "Extérieur" },
-  { src: IMG4940, alt: "Terrasse et jardin clos 1700m²", label: "Terrasse" },
-  { src: IMG4941, alt: "La Villa Heurtés Vents — Normandie, Eure", label: "La Villa" },
+  { src: img4937, alt: "Vue de la villa normande et son jardin privatif", label: "Villa & Jardin" },
+  { src: img4939, alt: "Espace extérieur de La Villa Heurtés Vents", label: "Extérieur" },
+  { src: img4940, alt: "Terrasse et jardin clos 1700m²", label: "Terrasse" },
+  { src: img4941, alt: "La Villa Heurtés Vents — Normandie, Eure", label: "La Villa" },
 
   { src: cuisine, alt: "Cuisine équipée haut de gamme de La Villa Heurtés Vents", label: "Cuisine" },
   { src: cuisine1, alt: "Cuisine américaine avec bar et équipements premium", label: "Cuisine équipée" },
