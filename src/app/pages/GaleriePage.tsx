@@ -27,9 +27,6 @@ import cuisine2 from "../../imports/cuisine2.JPG";
 
 const IMAGES_FR = [
   { src: heroHome, alt: "La Villa Heurtés Vents — Vue extérieure, longère normande en pierre", label: "Extérieur" },
-  { src: cuisine, alt: "Cuisine équipée haut de gamme de La Villa Heurtés Vents", label: "Cuisine" },
-  { src: cuisine1, alt: "Cuisine américaine avec bar et équipements premium", label: "Cuisine équipée" },
-  { src: cuisine2, alt: "Espace cuisine lumineux de la villa normande", label: "Cuisine & Séjour" },
   { src: piscine, alt: "Piscine chauffée de La Villa Heurtés Vents — eau tempérée", label: "Piscine" },
   { src: piscine1, alt: "Piscine privée et jardin clos de la villa normande", label: "Piscine & Jardin" },
   { src: salon1, alt: "Salon chaleureux de la villa normande", label: "Salon" },
