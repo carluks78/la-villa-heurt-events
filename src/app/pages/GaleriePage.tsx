@@ -21,9 +21,15 @@ import img4937 from "../../imports/IMG_4937.JPG";
 import img4939 from "../../imports/IMG_4939.JPG";
 import img4940 from "../../imports/IMG_4940.JPG";
 import img4941 from "../../imports/IMG_4941.JPG";
+import cuisine from "../../imports/cuisine.JPG";
+import cuisine1 from "../../imports/cuisine1.JPG";
+import cuisine2 from "../../imports/cuisine2.JPG";
 
 const IMAGES_FR = [
   { src: heroHome, alt: "La Villa Heurtés Vents — Vue extérieure, longère normande en pierre", label: "Extérieur" },
+  { src: cuisine, alt: "Cuisine équipée haut de gamme de La Villa Heurtés Vents", label: "Cuisine" },
+  { src: cuisine1, alt: "Cuisine américaine avec bar et équipements premium", label: "Cuisine équipée" },
+  { src: cuisine2, alt: "Espace cuisine lumineux de la villa normande", label: "Cuisine & Séjour" },
   { src: piscine, alt: "Piscine chauffée de La Villa Heurtés Vents — eau tempérée", label: "Piscine" },
   { src: piscine1, alt: "Piscine privée et jardin clos de la villa normande", label: "Piscine & Jardin" },
   { src: salon1, alt: "Salon chaleureux de la villa normande", label: "Salon" },
@@ -38,6 +44,9 @@ const IMAGES_FR = [
   { src: img4939, alt: "Espace extérieur de La Villa Heurtés Vents", label: "Extérieur" },
   { src: img4940, alt: "Terrasse et jardin clos 1700m²", label: "Terrasse" },
   { src: img4941, alt: "La Villa Heurtés Vents — Normandie, Eure", label: "La Villa" },
+  { src: cuisine, alt: "Cuisine équipée haut de gamme de La Villa Heurtés Vents", label: "Cuisine" },
+{ src: cuisine1, alt: "Cuisine américaine avec bar et équipements premium", label: "Cuisine équipée" },
+{ src: cuisine2, alt: "Espace cuisine lumineux de la villa normande", label: "Cuisine & Séjour" },
 ];
 
 const IMAGES_EN = [
@@ -56,6 +65,9 @@ const IMAGES_EN = [
   { src: img4939, alt: "Exterior space of La Villa Heurtés Vents", label: "Exterior" },
   { src: img4940, alt: "Terrace and 1700m² enclosed garden", label: "Terrace" },
   { src: img4941, alt: "La Villa Heurtés Vents — Normandy, Eure", label: "The Villa" },
+  { src: cuisine, alt: "Premium equipped kitchen at La Villa Heurtés Vents", label: "Kitchen" },
+{ src: cuisine1, alt: "American kitchen with bar and premium appliances", label: "Equipped kitchen" },
+{ src: cuisine2, alt: "Bright kitchen area of the Norman villa", label: "Kitchen & Lounge" },
 ];
 
 export function GaleriePage() {
