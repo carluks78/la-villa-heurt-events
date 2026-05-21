@@ -60,9 +60,9 @@ const STAYS_FR = [
     title: "Séjour avec Bébé",
     sub: "Familles avec tout-petits",
     image: heroHome,
-    tags: ["Lit bébé", "Plain-pied", "Jardin clos", "Calme"],
-    desc: "La villa de plain-pied, le jardin clos et sécurisé, le lit bébé disponible sur demande — tout est pensé pour que les familles avec bébés ou tout-petits puissent profiter pleinement de leur séjour en toute sérénité.",
-    highlights: ["Plain-pied sans escaliers dangereux", "Jardin clos sécurisé", "Lit bébé fourni sur demande", "Calme et nature préservée", "Pierre à l'écoute pour vos besoins"],
+    tags: ["Lit bébé", "rez de chaussée", "Jardin clos", "Calme"],
+    desc: "La villa rez de chaussée , étage pour accéder aux chambres, le jardin clos et sécurisé, le lit bébé disponible sur demande — tout est pensé pour que les familles avec bébés ou tout-petits puissent profiter pleinement de leur séjour en toute sérénité.",
+    highlights: ["rez de chaussée avec étage pour acceder au chambres", "Jardin clos sécurisé", "Lit bébé fourni sur demande", "Calme et nature préservée", "Pierre à l'écoute pour vos besoins"],
   },
 ];
 
