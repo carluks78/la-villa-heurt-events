@@ -28,22 +28,28 @@ import cuisine2 from "../../imports/cuisine2.JPG";
 const IMAGES_FR = [
   { src: heroHome, alt: "La Villa Heurtés Vents — Vue extérieure, longère normande en pierre", label: "Extérieur" },
   { src: piscine, alt: "Piscine chauffée de La Villa Heurtés Vents — eau tempérée", label: "Piscine" },
-  { src: piscine-1, alt: "Piscine privée et jardin clos de la villa normande", label: "Piscine & Jardin" },
+
+  { src: piscine1, alt: "Piscine privée et jardin clos de la villa normande", label: "Piscine & Jardin" },
+
   { src: salon1, alt: "Salon chaleureux de la villa normande", label: "Salon" },
   { src: salon2, alt: "Espace séjour lumineux de la longère", label: "Séjour" },
   { src: salon, alt: "Intérieur élégant de la longère normande", label: "Intérieur" },
+
   { src: chambre1, alt: "Suite parentale king size — La Villa Heurtés Vents", label: "Suite parentale" },
   { src: chambre2, alt: "Chambre double élégante", label: "Chambre 2" },
   { src: chambre3, alt: "Chambre prestige normande", label: "Chambre 3" },
   { src: chambre4, alt: "Chambre avec vue sur la nature", label: "Chambre 4" },
+
   { src: balneo, alt: "Balnéothérapie et espace détente", label: "Balnéothérapie" },
-  { src: IMG-4937, alt: "Vue de la villa normande et son jardin privatif", label: "Villa & Jardin" },
-  { src: IMG-4939, alt: "Espace extérieur de La Villa Heurtés Vents", label: "Extérieur" },
-  { src: IMG-4940, alt: "Terrasse et jardin clos 1700m²", label: "Terrasse" },
-  { src: IMG-4941, alt: "La Villa Heurtés Vents — Normandie, Eure", label: "La Villa" },
+
+  { src: IMG4937, alt: "Vue de la villa normande et son jardin privatif", label: "Villa & Jardin" },
+  { src: IMG4939, alt: "Espace extérieur de La Villa Heurtés Vents", label: "Extérieur" },
+  { src: IMG4940, alt: "Terrasse et jardin clos 1700m²", label: "Terrasse" },
+  { src: IMG4941, alt: "La Villa Heurtés Vents — Normandie, Eure", label: "La Villa" },
+
   { src: cuisine, alt: "Cuisine équipée haut de gamme de La Villa Heurtés Vents", label: "Cuisine" },
-{ src: cuisine1, alt: "Cuisine américaine avec bar et équipements premium", label: "Cuisine équipée" },
-{ src: cuisine2, alt: "Espace cuisine lumineux de la villa normande", label: "Cuisine & Séjour" },
+  { src: cuisine1, alt: "Cuisine américaine avec bar et équipements premium", label: "Cuisine équipée" },
+  { src: cuisine2, alt: "Espace cuisine lumineux de la villa normande", label: "Cuisine & Séjour" },
 ];
 
 const IMAGES_EN = [
