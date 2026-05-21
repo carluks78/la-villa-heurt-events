@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://la-villa-heurt-events.vercel.app/sitemap.xml
+
+# La Villa Heurt Events - Location de villa de luxe en Haute-Normandie
+# Hardencourt-Cocherel, Eure, France
