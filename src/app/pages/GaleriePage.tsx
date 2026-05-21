@@ -42,6 +42,8 @@ const IMAGES_FR = [
   { src: img4940, alt: "Terrasse et jardin clos 1700m²", label: "Terrasse" },
   { src: img4941, alt: "La Villa Heurtés Vents — Normandie, Eure", label: "La Villa" },
   { src: cuisine, alt: "La cuisine", label: "cuisine" },
+  { src: cuisine, alt: "La cuisine", label: "cuisine1" },
+  { src: cuisine, alt: "La cuisine", label: "cuisine2" },
 ];
 
 const IMAGES_EN = [
@@ -61,6 +63,8 @@ const IMAGES_EN = [
   { src: img4940, alt: "Terrace and 1700m² enclosed garden", label: "Terrace" },
   { src: img4941, alt: "La Villa Heurtés Vents — Normandy, Eure", label: "The Villa" },
   { src: cuisine, alt: "kitchen", label: "kitchen" },
+  { src: cuisine1, alt: "kitchen", label: "kitchen" },
+  { src: cuisine2, alt: "kitchen", label: "kitchen" },
 ];
 
 export function GaleriePage() {
