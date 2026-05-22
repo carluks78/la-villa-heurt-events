@@ -153,41 +153,6 @@ const RULES: Rule[] = [
   },
 ];
 
-function RuleCard({ rule }: { rule: Rule }) {
-  const { lang } = useLanguage();
-  const ok = lang === "fr" ? rule.ok : rule.okEn;
-  const no = lang === "fr" ? rule.no : rule.noEn;
-  const Icon = rule.icon;
-
-  return (
-    <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(201,169,110,0.12)", borderRadius: "14px", padding: "24px" }}>
-      <div style={{ display: "flex", gap: "12px", alignItems: "center", marginBottom: "16px" }}>
-        <div style={{ width: "40px", height: "40px", borderRadius: "9px", background: "rgba(201,169,110,0.1)", border: "1px solid rgba(201,169,110,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <Icon size={18} color="#C9A96E" />
-        </div>
-        <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "17px", fontWeight: 600, color: "#fff", margin: 0 }}>
-          {lang === "fr" ? rule.titleFr : rule.titleEn}
-        </h3>
-      </div>
-
-      <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-        {ok?.map((item, i) => (
-          <div key={i} style={{ display: "flex", gap: "9px", alignItems: "flex-start" }}>
-            <CheckCircle size={14} color="#22c55e" style={{ flexShrink: 0, marginTop: "2px" }} />
-            <span style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "13px", color: "rgba(255,255,255,0.65)", lineHeight: 1.5 }}>{item}</span>
-          </div>
-        ))}
-        {no?.map((item, i) => (
-          <div key={i} style={{ display: "flex", gap: "9px", alignItems: "flex-start" }}>
-            <XCircle size={14} color="#ef4444" style={{ flexShrink: 0, marginTop: "2px" }} />
-            <span style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "13px", color: "rgba(255,255,255,0.65)", lineHeight: 1.5 }}>{item}</span>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
 export function ConsignesPage() {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
