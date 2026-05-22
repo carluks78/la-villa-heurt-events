@@ -23,6 +23,10 @@ import img4941 from "../../imports/IMG_4941.JPG";
 import cuisine from "../../imports/cuisine.JPG";
 import cuisine1 from "../../imports/cuisine1.JPG";
 import cuisine2 from "../../imports/cuisine2.JPG";
+import img4952 from "../../imports/IMG_4952.JPG";
+import img4953 from "../../imports/IMG_4953.JPG";
+import img4954 from "../../imports/IMG_4954.JPG";
+import img4955 from "../../imports/IMG_4955.JPG";
 
 const IMAGES_FR = [
   { src: heroHome, alt: "La Villa Heurtés Vents — Vue extérieure, longère normande en pierre", label: "Extérieur" },
@@ -43,6 +47,10 @@ const IMAGES_FR = [
   { src: img4939, alt: "Espace extérieur de La Villa Heurtés Vents", label: "Extérieur" },
   { src: img4940, alt: "Terrasse et jardin clos 1700m²", label: "Terrasse" },
   { src: img4941, alt: "La Villa Heurtés Vents — Normandie, Eure", label: "La Villa" },
+  { src: img4952, alt: "Vue de la villa normande et son jardin privatif et sa piscine de nuit", label: "Villa & Jardin nuit" },
+  { src: img4953, alt: "Espace extérieur de La Villa Heurtés Vents de nuit", label: "Extérieur nuit" },
+  { src: img4954, alt: "Terrasse piscine", label: "Terrasse nuit" },
+  { src: img4955, alt: "La Villa Heurtés Vents — Normandie, Eure", label: "La Villa de nuit" },
 
   { src: cuisine, alt: "Cuisine équipée haut de gamme de La Villa Heurtés Vents", label: "Cuisine" },
   { src: cuisine1, alt: "Cuisine américaine avec bar et équipements premium", label: "Cuisine équipée" },
