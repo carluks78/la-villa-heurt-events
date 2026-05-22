@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "motion/react";
-import { QRCodeSVG } from "qrcode.react";
+
 import { SEOHead, SEO_GEO_BLOCK_FR, SEO_GEO_BLOCK_EN } from "../components/SEOHead";
 import { PageHero } from "../components/PageHero";
 import { InternalLinks } from "../components/InternalLinks";
@@ -8,7 +8,6 @@ import { useLanguage } from "../context/LanguageContext";
 import { CheckCircle, XCircle, Phone, Bed, Flame, Waves, Trash2, Volume2, Key, Baby, Car, Coffee, Tv } from "lucide-react";
 import heroHome from "../../imports/hero-home.png";
 
-const CONSIGNES_URL = "https://la-villa-heurt-events.vercel.app/consignes";
 const WA_URL = `https://wa.me/33601414173?text=${encodeURIComponent("Bonjour Pierre, j'ai une question concernant mon séjour à La Villa Heurtés Vents.")}`;
 
 interface Rule { icon: React.ElementType; titleFr: string; titleEn: string; ok?: string[]; okEn?: string[]; no?: string[]; noEn?: string[]; }
@@ -153,6 +152,41 @@ const RULES: Rule[] = [
   },
 ];
 
+function RuleCard({ rule }: { rule: Rule }) {
+  const { lang } = useLanguage();
+  const ok = lang === "fr" ? rule.ok : rule.okEn;
+  const no = lang === "fr" ? rule.no : rule.noEn;
+  const Icon = rule.icon;
+
+  return (
+    <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(201,169,110,0.12)", borderRadius: "14px", padding: "24px" }}>
+      <div style={{ display: "flex", gap: "12px", alignItems: "center", marginBottom: "16px" }}>
+        <div style={{ width: "40px", height: "40px", borderRadius: "9px", background: "rgba(201,169,110,0.1)", border: "1px solid rgba(201,169,110,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+          <Icon size={18} color="#C9A96E" />
+        </div>
+        <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: "17px", fontWeight: 600, color: "#fff", margin: 0 }}>
+          {lang === "fr" ? rule.titleFr : rule.titleEn}
+        </h3>
+      </div>
+
+      <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+        {ok?.map((item, i) => (
+          <div key={i} style={{ display: "flex", gap: "9px", alignItems: "flex-start" }}>
+            <CheckCircle size={14} color="#22c55e" style={{ flexShrink: 0, marginTop: "2px" }} />
+            <span style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "13px", color: "rgba(255,255,255,0.65)", lineHeight: 1.5 }}>{item}</span>
+          </div>
+        ))}
+        {no?.map((item, i) => (
+          <div key={i} style={{ display: "flex", gap: "9px", alignItems: "flex-start" }}>
+            <XCircle size={14} color="#ef4444" style={{ flexShrink: 0, marginTop: "2px" }} />
+            <span style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "13px", color: "rgba(255,255,255,0.65)", lineHeight: 1.5 }}>{item}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export function ConsignesPage() {
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
@@ -179,31 +213,7 @@ export function ConsignesPage() {
         <section ref={ref} style={{ background: "#0A0A0F", padding: "72px 0" }}>
           <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 32px" }}>
 
-            {/* QR codes */}
-            <motion.div initial={{ opacity: 0, y: 28 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.8 }}
-              style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "24px", marginBottom: "64px" }}>
-
-              {/* QR 1 — Consignes (clickable) */}
-              <div style={{ background: "rgba(201,169,110,0.06)", border: "1px solid rgba(201,169,110,0.25)", borderRadius: "18px", padding: "32px", textAlign: "center" }}>
-                <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "11px", letterSpacing: "3px", color: "#C9A96E", textTransform: "uppercase", marginBottom: "20px" }}>
-                  {lang === "fr" ? "Consignes en ligne" : "Online rules"}
-                </p>
-                <a href={CONSIGNES_URL} target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", padding: "16px", background: "#fff", borderRadius: "12px", marginBottom: "16px", cursor: "pointer", transition: "transform 0.2s, box-shadow 0.2s", boxShadow: "0 4px 16px rgba(0,0,0,0.2)" }}
-                  onMouseEnter={(e) => { const el = e.currentTarget as HTMLElement; el.style.transform = "scale(1.03)"; el.style.boxShadow = "0 8px 28px rgba(0,0,0,0.3)"; }}
-                  onMouseLeave={(e) => { const el = e.currentTarget as HTMLElement; el.style.transform = "scale(1)"; el.style.boxShadow = "0 4px 16px rgba(0,0,0,0.2)"; }}>
-                  <QRCodeSVG value={CONSIGNES_URL} size={160} fgColor="#0A0A0F" bgColor="#ffffff" level="M" />
-                </a>
-                <p style={{ fontFamily: "'Playfair Display', serif", fontSize: "16px", fontWeight: 600, color: "#fff", margin: "0 0 6px" }}>
-                  {lang === "fr" ? "Scannez pour accéder" : "Scan to access"}
-                </p>
-                <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "11px", color: "rgba(255,255,255,0.45)", margin: "0 0 12px" }}>
-                  {lang === "fr" ? "Cette page de consignes" : "This house rules page"}
-                </p>
-                <a href={CONSIGNES_URL} target="_blank" rel="noopener noreferrer"
-                  style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "rgba(201,169,110,0.12)", border: "1px solid rgba(201,169,110,0.3)", color: "#C9A96E", padding: "8px 16px", borderRadius: "8px", textDecoration: "none", fontFamily: "'Montserrat', sans-serif", fontSize: "11px", fontWeight: 600 }}>
-                  {lang === "fr" ? "Ouvrir la page" : "Open page"} →
-                </a>
-              </div>
+            
 
               {/* QR 2 — WhatsApp Pierre (clickable) */}
               <div style={{ background: "rgba(37,211,102,0.05)", border: "1px solid rgba(37,211,102,0.2)", borderRadius: "18px", padding: "32px", textAlign: "center" }}>
