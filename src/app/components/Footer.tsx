@@ -111,7 +111,7 @@ export function Footer() {
               <a href="mailto:pierre@villa-heurtevents.fr" style={{ display: "flex", gap: "9px", alignItems: "center", color: "rgba(255,255,255,0.6)", textDecoration: "none", fontFamily: "'Montserrat', sans-serif", fontSize: "13px" }}
                 onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#C9A96E")}
                 onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "rgba(255,255,255,0.6)")}
-              ><Mail size={13} color="#C9A96E" /> pierre@villa-heurtevents.fr</a>
+              ><Mail size={13} color="#C9A96E" /> markarley@hotmail.fr</a>
               <a href="https://maps.google.com/?q=Hardencourt-Cocherel+27120" target="_blank" rel="noopener noreferrer"
                 style={{ display: "flex", gap: "9px", alignItems: "flex-start", color: "rgba(255,255,255,0.6)", textDecoration: "none", fontFamily: "'Montserrat', sans-serif", fontSize: "13px", lineHeight: 1.5 }}>
                 <MapPin size={13} color="#C9A96E" style={{ flexShrink: 0, marginTop: "2px" }} /> Hardencourt-Cocherel<br />Eure 27120, Normandie
