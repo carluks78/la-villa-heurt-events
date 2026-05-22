@@ -213,31 +213,6 @@ export function ConsignesPage() {
         <section ref={ref} style={{ background: "#0A0A0F", padding: "72px 0" }}>
           <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 32px" }}>
 
-            
-
-              {/* QR 2 — WhatsApp Pierre (clickable) */}
-              <div style={{ background: "rgba(37,211,102,0.05)", border: "1px solid rgba(37,211,102,0.2)", borderRadius: "18px", padding: "32px", textAlign: "center" }}>
-                <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "11px", letterSpacing: "3px", color: "#25D366", textTransform: "uppercase", marginBottom: "20px" }}>
-                  {lang === "fr" ? "Contacter Pierre" : "Contact Pierre"}
-                </p>
-                <a href={WA_URL} target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", padding: "16px", background: "#fff", borderRadius: "12px", marginBottom: "16px", cursor: "pointer", transition: "transform 0.2s, box-shadow 0.2s", boxShadow: "0 4px 16px rgba(0,0,0,0.2)" }}
-                  onMouseEnter={(e) => { const el = e.currentTarget as HTMLElement; el.style.transform = "scale(1.03)"; el.style.boxShadow = "0 8px 28px rgba(0,0,0,0.3)"; }}
-                  onMouseLeave={(e) => { const el = e.currentTarget as HTMLElement; el.style.transform = "scale(1)"; el.style.boxShadow = "0 4px 16px rgba(0,0,0,0.2)"; }}>
-                  <QRCodeSVG value={WA_URL} size={160} fgColor="#075E54" bgColor="#ffffff" level="M" />
-                </a>
-                <p style={{ fontFamily: "'Playfair Display', serif", fontSize: "16px", fontWeight: 600, color: "#fff", margin: "0 0 6px" }}>
-                  WhatsApp — Pierre Jacques
-                </p>
-                <p style={{ fontFamily: "'Montserrat', sans-serif", fontSize: "11px", color: "rgba(255,255,255,0.45)", margin: "0 0 12px" }}>
-                  +33 6 01 41 41 73
-                </p>
-                <a href={WA_URL} target="_blank" rel="noopener noreferrer"
-                  style={{ display: "inline-flex", alignItems: "center", gap: "6px", background: "rgba(37,211,102,0.12)", border: "1px solid rgba(37,211,102,0.25)", color: "#25D366", padding: "8px 16px", borderRadius: "8px", textDecoration: "none", fontFamily: "'Montserrat', sans-serif", fontSize: "12px", fontWeight: 600 }}>
-                  {lang === "fr" ? "Ouvrir WhatsApp" : "Open WhatsApp"}
-                </a>
-              </div>
-            </motion.div>
-
             {/* Check-in/out banner */}
             <motion.div initial={{ opacity: 0, y: 20 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ delay: 0.2, duration: 0.7 }}
               style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "16px", marginBottom: "48px" }}>
